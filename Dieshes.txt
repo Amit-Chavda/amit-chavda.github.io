@@ -9,3 +9,8 @@ The list of foods for foodies
 8. Maggie
 9. PopCorn
 10. Puff
+11. Pasta
+12. Noodles
+13. Burger
+14. Samosa
+15. Hotdog
