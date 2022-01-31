@@ -13,7 +13,7 @@ req.send();
 req.onload = () => {
     let json = JSON.parse(req.response);
   document.getElementById("setup").innerText=json.setup;
-  document.getElementById("setup").innerText=json.delivery;
+  document.getElementById("delivery").innerText=json.delivery;
 }
 </script>
 </body>
