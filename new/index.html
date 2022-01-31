@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
-<h2>Laugh it out loud!!!!</h2>
- <br><br> 
-<h2 id="setup"><h2>
-<h3 id="delivery"><h3>
-<script>
-  let req = new XMLHttpRequest();
-req.open("GET", "https://v2.jokeapi.dev/joke/Any", true);
-req.send();
-req.onload = () => {
-    let json = JSON.parse(req.response);
-  document.getElementById("setup").innerText=json.setup;
-  document.getElementById("delivery").innerText=json.delivery;
-}
-</script>
+    <h2>Laugh it out loud!!!!</h2>
+    <br><br>
+    <h2 id="setup">
+        <h2>
+            <h3 id="delivery">
+                <h3>
+                    <button onclick='get_joke()'>Request Joke</button>
+                    <script>
+                        let get_joke = () => {
+                            let req = new XMLHttpRequest();
+                            req.open("GET", "https://v2.jokeapi.dev/joke/Any", true);
+                            req.send();
+                            req.onload = () => {
+                                let json = JSON.parse(req.response);
+                                document.getElementById("setup").innerText = json.setup;
+                                document.getElementById("delivery").innerText = json.delivery;
+                            }
+                        }
+                    </script>
 </body>
-</html> 
+
+</html>
