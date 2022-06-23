@@ -5,6 +5,15 @@ body {
 }
 
 
+#developer{
+    font-size: 30px;
+    margin-top: 30%;
+    position: fixed;
+    margin-left: 42%;
+}
+#developer a{
+    text-decoration: none;
+}
 /* CSS */
 
 .button-64 {
