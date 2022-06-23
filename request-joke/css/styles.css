@@ -7,9 +7,9 @@ body {
 
 #developer{
     font-size: 30px;
-    margin-top: 30%;
-    position: fixed;
-    margin-left: 90%;
+    position: absolute;
+    bottom: 90%;
+    right: 80%;
 }
 #developer a{
     text-decoration: none;
